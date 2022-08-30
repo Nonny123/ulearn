@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "4g7kFGdpIUAwSsv9Xerdq1rvPoWhAkR9UO/GijBvvxmanFTDqGJSZ5j3Zv75jX8Dx5ug9vvB+AyDLohGys+1Dg==",
+  "dgSpecHash": "MSIkP3H4FIWzgXv8/r5B6qw1+zGXxs2fVXQonkNPqa2ujlrwQvwUYRk63mwriHpRT2G3XIny0AHvS+sjMGZR5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\NONSO\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Database\\VOD.Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NONSO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.1\\microsoft.aspnetcore.cryptography.internal.5.0.1.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.1\\microsoft.aspnetcore.cryptography.keyderivation.5.0.1.nupkg.sha512",
+    "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.1\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.1.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
