@@ -14,5 +14,10 @@ namespace VOD.Database.Contexts
         public VODContext(DbContextOptions<VODContext> options): base(options)
         {
         }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
     }
 }

@@ -11,7 +11,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using VOD.UI.Data;
+using VOD.Common.Entities;
+using VOD.Database.Contexts;
+
 
 namespace VOD.UI
 {
@@ -27,12 +29,12 @@ namespace VOD.UI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<VODContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDatabaseDeveloperPageExceptionFilter();
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDefaultIdentity<VODUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<VODContext>();
             services.AddRazorPages();
         }
 

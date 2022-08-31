@@ -1698,6 +1698,35 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "VOD.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "5.0.1"
+        },
+        "compile": {
+          "bin/placeholder/VOD.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VOD.Common.dll": {}
+        }
+      },
+      "VOD.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1",
+          "Microsoft.Extensions.Identity.Stores": "5.0.1",
+          "VOD.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VOD.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VOD.Database.dll": {}
+        }
       }
     }
   },
@@ -6195,6 +6224,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "VOD.Common/1.0.0": {
+      "type": "project",
+      "path": "../VOD.Common/VOD.Common.csproj",
+      "msbuildProject": "../VOD.Common/VOD.Common.csproj"
+    },
+    "VOD.Database/1.0.0": {
+      "type": "project",
+      "path": "../VOD.Database/VOD.Database.csproj",
+      "msbuildProject": "../VOD.Database/VOD.Database.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6204,7 +6243,9 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.12",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.12",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.12"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.12",
+      "VOD.Common >= 1.0.0",
+      "VOD.Database >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6237,7 +6278,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\NONSO\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj": {
+              "projectPath": "C:\\Users\\NONSO\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj"
+            },
+            "C:\\Users\\NONSO\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Database\\VOD.Database.csproj": {
+              "projectPath": "C:\\Users\\NONSO\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Database\\VOD.Database.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -89,3 +89,7 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\obj\Debug\net5.0\VOD.UI.
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\obj\Debug\net5.0\ref\VOD.UI.dll
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\obj\Debug\net5.0\VOD.UI.pdb
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\obj\Debug\net5.0\VOD.UI.genruntimeconfig.cache
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\VOD.Common.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\VOD.Database.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\VOD.Common.pdb
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\VOD.Database.pdb

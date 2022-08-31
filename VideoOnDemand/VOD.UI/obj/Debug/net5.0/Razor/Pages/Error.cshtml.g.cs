@@ -28,13 +28,13 @@ using VOD.UI;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\Pages\_ViewImports.cshtml"
-using VOD.UI.Data;
+using VOD.Common.Entities;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1f02565c188bc0cf60de1bc120acef71a3608055", @"/Pages/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1aee8361db19834c8385752c349d023047439a60", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a863229799b98d7d6a46a6de71425d706fa876d9", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Error : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         #pragma warning disable 1998
