@@ -2,7 +2,6 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Common\bin\Debug\net5.0\VOD
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Common\bin\Debug\net5.0\VOD.Common.dll
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Common\bin\Debug\net5.0\ref\VOD.Common.dll
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Common\bin\Debug\net5.0\VOD.Common.pdb
-C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Common\obj\Debug\net5.0\VOD.Common.csproj.AssemblyReference.cache
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Common\obj\Debug\net5.0\VOD.Common.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Common\obj\Debug\net5.0\VOD.Common.AssemblyInfoInputs.cache
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Common\obj\Debug\net5.0\VOD.Common.AssemblyInfo.cs
