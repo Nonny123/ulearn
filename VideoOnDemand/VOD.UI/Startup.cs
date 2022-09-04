@@ -13,7 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using VOD.Common.Entities;
 using VOD.Database.Contexts;
-
+using VOD.Database.Migrations;
 
 namespace VOD.UI
 {
@@ -35,16 +35,19 @@ namespace VOD.UI
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddDefaultIdentity<VODUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<VODContext>();
-            services.AddRazorPages();
+            //services.AddRazorPages();
+
+            services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, VODContext db)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseMigrationsEndPoint();
+                //app.UseDatabaseErrorPage();
+              
             }
             else
             {
@@ -56,14 +59,24 @@ namespace VOD.UI
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            //app.UseCookiePolicy();
+
             app.UseRouting();
 
-            app.UseAuthentication();
-            app.UseAuthorization();
+            // Uncomment to recreate the database. ALL DATA WILL BE LOST !
+            DbInitializer.RecreateDatabase(db);
+            
+            //Uncomment to seed the database
+            DbInitializer.Initialize(db);
 
-            app.UseEndpoints(endpoints =>
+            app.UseAuthentication();
+
+
+            app.UseMvc(routes =>
             {
-                endpoints.MapRazorPages();
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
