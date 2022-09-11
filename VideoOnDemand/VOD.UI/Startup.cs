@@ -64,7 +64,7 @@ namespace VOD.UI
             app.UseRouting();
 
             // Uncomment to recreate the database. ALL DATA WILL BE LOST !
-            DbInitializer.RecreateDatabase(db);
+            //DbInitializer.RecreateDatabase(db);
             
             //Uncomment to seed the database
             DbInitializer.Initialize(db);
