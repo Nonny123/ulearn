@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using VOD.Common.Entities;
 using VOD.Database.Contexts;
 using VOD.Database.Migrations;
+using VOD.Database.Services;
 
 namespace VOD.UI
 {
@@ -35,9 +36,13 @@ namespace VOD.UI
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddDefaultIdentity<VODUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<VODContext>();
+            
+            
             //services.AddRazorPages();
 
             services.AddMvc(option => option.EnableEndpointRouting = false);
+
+            services.AddScoped<IDbReadService, DbReadService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
