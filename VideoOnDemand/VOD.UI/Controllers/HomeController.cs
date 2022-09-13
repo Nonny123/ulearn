@@ -14,16 +14,19 @@ namespace VOD.UI.Controllers
 {
     public class HomeController : Controller
     {
-        private SignInManager<VODUser> _signInManager;
-        private IDbReadService _db;
+        #region Properties
+        private readonly SignInManager<VODUser> _signInManager;
+        #endregion
 
-        public HomeController(SignInManager<VODUser> signInMgr, IDbReadService db)
+        #region Constructor
+        public HomeController(SignInManager<VODUser> signInMgr)
         {
             _signInManager = signInMgr;
-            _db = db;
         }
+        #endregion
 
-        public async Task<IActionResult> Index()
+        #region Actions
+        public IActionResult Index()
         {
             if (!_signInManager.IsSignedIn(User))
                 return RedirectToPage("/Account/Login", new { Area = "Identity" });
@@ -41,5 +44,6 @@ namespace VOD.UI.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        #endregion
     }
 }

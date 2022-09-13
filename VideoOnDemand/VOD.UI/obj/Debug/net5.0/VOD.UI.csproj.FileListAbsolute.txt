@@ -172,3 +172,10 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\obj\Debug\net5.0\Razor\P
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\System.Web.Mvc.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.UI\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
