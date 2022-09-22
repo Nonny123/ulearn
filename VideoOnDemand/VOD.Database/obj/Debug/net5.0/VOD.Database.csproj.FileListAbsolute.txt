@@ -15,4 +15,3 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Database\obj\Debug\net5.0\V
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Database\obj\Debug\net5.0\ref\VOD.Database.dll
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Database\obj\Debug\net5.0\VOD.Database.pdb
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Database\obj\Debug\net5.0\VOD.Database.genruntimeconfig.cache
-C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Database\obj\Debug\net5.0\VOD.Database.csproj.CopyComplete

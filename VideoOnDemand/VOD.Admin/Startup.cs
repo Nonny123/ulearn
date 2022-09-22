@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using VOD.Common.Entities;
 using VOD.Database.Contexts;
 
 namespace VOD.Admin
@@ -27,8 +28,17 @@ namespace VOD.Admin
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDatabaseDeveloperPageExceptionFilter();
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+
+
+            services.AddDefaultIdentity<VODUser>()
+                .AddRoles<IdentityRole>()
+                .AddDefaultUI()
                 .AddEntityFrameworkStores<VODContext>();
+
+
+
+
+
             services.AddRazorPages();
         }
 
