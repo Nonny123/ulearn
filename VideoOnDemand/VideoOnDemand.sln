@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VOD.Common", "VOD.Common\VO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VOD.Database", "VOD.Database\VOD.Database.csproj", "{FB17EC6D-A557-4EAF-96D1-AB8B975EF1FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VOD.Admin", "VOD.Admin\VOD.Admin.csproj", "{A21794D7-1BAA-4640-839F-8CF584E07F22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VOD.Admin", "VOD.Admin\VOD.Admin.csproj", "{A21794D7-1BAA-4640-839F-8CF584E07F22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
