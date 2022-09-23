@@ -176,3 +176,11 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razo
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Shared\_AdminMenuPartial.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Shared\_MenuPartial.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\_CardPartial.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Users\Create.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Users\Delete.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Users\Details.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Users\Edit.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Users\Index.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Shared\_BackToIndexButtonsPartial.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Shared\_PageButtonsPartial.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Shared\_TableRowButtonsPartial.cshtml.g.cs

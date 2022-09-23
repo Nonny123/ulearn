@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using VOD.Common.Entities;
 using VOD.Database.Contexts;
+using VOD.Database.Services;
 
 namespace VOD.Admin
 {
@@ -36,6 +37,10 @@ namespace VOD.Admin
                 .AddEntityFrameworkStores<VODContext>();
 
 
+
+            services.AddScoped<IDbReadService, DbReadService>();
+            services.AddScoped<IDbWriteService, DbWriteService>();
+            services.AddScoped<IUserService, UserService>();
 
 
 
