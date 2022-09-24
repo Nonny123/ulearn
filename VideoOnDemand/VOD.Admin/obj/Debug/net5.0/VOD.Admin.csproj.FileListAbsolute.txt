@@ -184,3 +184,4 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razo
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Shared\_BackToIndexButtonsPartial.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Shared\_PageButtonsPartial.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Shared\_TableRowButtonsPartial.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\bin\Debug\net5.0\AutoMapper.dll

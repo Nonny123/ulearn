@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2TRzSGq2KAC0iViRmjZY+CjdJJ9JqDY1EnFhJZEKCOZBEKL9njEATV0ORvhMA/Ytu+pzwmM4OZKmlBayztwc4A==",
+  "dgSpecHash": "Cg9B7BhtV1jqntYZ/bJRgqFoGG+P4PfZQ4hqLP40fUxxFS80JWwYM54RhKc8JjjpJ4Vk3wRVmrx0laBgKWg1CQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\NONSO\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Admin\\VOD.Admin.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\NONSO\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.aspnet.mvc\\5.0.1\\microsoft.aspnet.mvc.5.0.1.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.aspnet.razor\\3.0.0\\microsoft.aspnet.razor.3.0.0.nupkg.sha512",
