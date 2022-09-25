@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using VOD.Common.Entities;
+using VOD.Common.Services;
 using VOD.Database.Contexts;
 using VOD.Database.Services;
 
@@ -38,9 +40,12 @@ namespace VOD.Admin
 
 
 
+            // Version 6.1.0: AutoMapper.Extensions.Microsoft.DependencyInjection
+            services.AddAutoMapper(typeof(Startup), typeof(Instructor), typeof(Course), typeof(Module), typeof(Video), typeof(Download));
             services.AddScoped<IDbReadService, DbReadService>();
             services.AddScoped<IDbWriteService, DbWriteService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAdminService, AdminEFService>();
 
 
 
