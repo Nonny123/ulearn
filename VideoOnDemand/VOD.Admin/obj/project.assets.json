@@ -2223,6 +2223,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.0",
           "Microsoft.AspNet.Mvc": "5.0.1",
           "Microsoft.Extensions.Identity.Stores": "5.0.1"
         },
