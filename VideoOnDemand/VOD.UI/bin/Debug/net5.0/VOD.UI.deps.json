@@ -2062,6 +2062,7 @@
       },
       "VOD.Common/1.0.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.AspNet.Mvc": "5.0.1",
           "Microsoft.Extensions.Identity.Stores": "5.0.17"
         },
