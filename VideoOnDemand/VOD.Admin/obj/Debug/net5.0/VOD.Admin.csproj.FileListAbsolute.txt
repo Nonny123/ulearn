@@ -199,3 +199,11 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razo
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Instructors\Edit.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Instructors\Index.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Shared\_DeletePageButtons.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Modules\Create.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Modules\Delete.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Modules\Edit.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Modules\Index.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Videos\Create.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Videos\Delete.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Videos\Edit.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Videos\Index.cshtml.g.cs

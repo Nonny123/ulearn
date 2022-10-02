@@ -14,6 +14,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VOD.API.Services;
 using VOD.Common.Entities;
 using VOD.Common.Services;
 using VOD.Database.Contexts;
@@ -55,7 +56,7 @@ namespace VOD.API
             services.AddScoped<IDbWriteService, DbWriteService>();
             services.AddScoped<IAdminService, AdminEFService>();
             services.AddScoped<IUserService, UserService>();
-            //services.AddTransient<ITokenService, TokenService>();
+            services.AddTransient<ITokenService, TokenService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
