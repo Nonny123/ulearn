@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Net.Http;
 using VOD.Common.Entities;
 using VOD.Common.Services;
 using VOD.Database.Contexts;
@@ -33,10 +35,26 @@ namespace VOD.Admin
             services.AddDatabaseDeveloperPageExceptionFilter();
 
 
+
+
             services.AddDefaultIdentity<VODUser>()
                 .AddRoles<IdentityRole>()
                 .AddDefaultUI()
                 .AddEntityFrameworkStores<VODContext>();
+
+
+
+
+            services.AddHttpClient("AdminClient", client =>
+            {
+                client.BaseAddress = new Uri("http://localhost:6600");
+                client.Timeout = new TimeSpan(0, 0, 30);
+                client.DefaultRequestHeaders.Clear();
+            }).ConfigurePrimaryHttpMessageHandler(handler =>
+                new HttpClientHandler()
+                {
+                    AutomaticDecompression = System.Net.DecompressionMethods.GZip
+                });
 
 
 
@@ -46,6 +64,9 @@ namespace VOD.Admin
             services.AddScoped<IDbWriteService, DbWriteService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAdminService, AdminEFService>();
+            //services.AddScoped<IAdminService, AdminAPIService>();
+            services.AddScoped<IHttpClientFactoryService, HttpClientFactoryService>();
+            services.AddScoped<IJwtTokenService, JwtTokenService>();
 
 
 
