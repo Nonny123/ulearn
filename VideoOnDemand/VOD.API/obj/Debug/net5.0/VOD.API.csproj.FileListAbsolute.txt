@@ -69,7 +69,6 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\static
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\staticwebassets\VOD.API.StaticWebAssets.xml
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\scopedcss\bundle\VOD.API.styles.css
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\VOD.API.RazorTargetAssemblyInfo.cache
-C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\VOD.API.csproj.CopyComplete
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\VOD.API.dll
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\ref\VOD.API.dll
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\VOD.API.pdb

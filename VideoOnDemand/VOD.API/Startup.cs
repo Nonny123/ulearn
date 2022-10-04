@@ -37,15 +37,23 @@ namespace VOD.API
             services.AddDbContext<VODContext>(options =>
                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            //services.AddDefaultIdentity<VODUser>()
-            //    .AddRoles<IdentityRole>()
-            //    .AddEntityFrameworkStores<VODContext>();
+            services.AddIdentityCore<VODUser>()
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<VODContext>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "VOD.API", Version = "v1" });
             });
+
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("VODUser", policy => policy.RequireClaim("VODUser", "true"));
+                options.AddPolicy("Admin", policy => policy.RequireClaim("Admin", "true"));
+            });
+
 
             //services.AddAutoMapper(); // Version 6.0.0: AutoMapper.Extensions.Microsoft.DependencyInjection
 
@@ -74,6 +82,8 @@ namespace VOD.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
