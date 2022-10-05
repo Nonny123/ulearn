@@ -73,3 +73,5 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\VOD.AP
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\ref\VOD.API.dll
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\VOD.API.pdb
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\VOD.API.genruntimeconfig.cache
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.API\obj\Debug\net5.0\VOD.API.csproj.CopyComplete

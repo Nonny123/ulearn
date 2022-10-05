@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8Hsps/yNEZIk9yVXsIbojPky6imEXLPdIr7Seslqc3ztZCtC8c8EzRpmGmxjvPNuq7XsNowSpRy+3jAgpyRrFA==",
+  "dgSpecHash": "V5OmpYfkSenZQ9doBuiVDDy3WcTLPSEtNqFMGFahqoc9bIS40AdvFvTtiEFXpkg0DHHW8nQctUVItm5xjoy1hg==",
   "success": true,
   "projectFilePath": "C:\\Users\\NONSO\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Database\\VOD.Database.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\NONSO\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
-    "C:\\Users\\NONSO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.0\\automapper.extensions.microsoft.dependencyinjection.6.1.0.nupkg.sha512",
+    "C:\\Users\\NONSO\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.aspnet.mvc\\5.0.1\\microsoft.aspnet.mvc.5.0.1.nupkg.sha512",
     "C:\\Users\\NONSO\\.nuget\\packages\\microsoft.aspnet.razor\\3.0.0\\microsoft.aspnet.razor.3.0.0.nupkg.sha512",

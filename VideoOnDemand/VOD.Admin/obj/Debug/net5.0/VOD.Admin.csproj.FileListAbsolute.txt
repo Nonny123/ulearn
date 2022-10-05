@@ -207,3 +207,7 @@ C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razo
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Videos\Delete.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Videos\Edit.cshtml.g.cs
 C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\obj\Debug\net5.0\Razor\Pages\Videos\Index.cshtml.g.cs
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\NONSO\source\repos\ulearn\VideoOnDemand\VOD.Admin\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

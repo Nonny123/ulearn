@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
@@ -41,6 +43,38 @@ namespace VOD.API
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<VODContext>();
 
+
+            #region JWT Token Authentication
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                var signingKey = new SymmetricSecurityKey(Convert.FromBase64String(Configuration["Jwt:SigningSecret"]));
+
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = signingKey,
+                    ClockSkew = TimeSpan.Zero
+                };
+                options.RequireHttpsMetadata = false;
+            });
+            #endregion
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("VODUser", policy => policy.RequireClaim("VODUser", "true"));
+                options.AddPolicy("Admin", policy => policy.RequireClaim("Admin", "true"));
+            });
+
+
+
+           
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -48,11 +82,7 @@ namespace VOD.API
             });
 
 
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("VODUser", policy => policy.RequireClaim("VODUser", "true"));
-                options.AddPolicy("Admin", policy => policy.RequireClaim("Admin", "true"));
-            });
+            
 
 
             //services.AddAutoMapper(); // Version 6.0.0: AutoMapper.Extensions.Microsoft.DependencyInjection
