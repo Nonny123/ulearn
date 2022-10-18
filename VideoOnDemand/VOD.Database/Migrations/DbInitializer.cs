@@ -31,7 +31,7 @@ namespace VOD.Database.Migrations
                 a record using the user id and 1 (or the id you gave the Admin
                 role in the AspNetRoles table) in the RoleId column.
              */
-            var email = "a@b.c";
+            var email = "admin@admin.com";
             var adminRoleId = string.Empty;
             var userId = string.Empty;
             #endregion
