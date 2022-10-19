@@ -1,6 +1,8 @@
 
 using System.Threading.Tasks;
-using System.Web.Mvc;
+//using System.Web.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using VOD.Common.DTOModels.Admin;
@@ -17,6 +19,8 @@ namespace VOD.Admin.Pages.Courses
         private readonly IAdminService _db;
         [BindProperty] public CourseDTO Input { get; set; } = new CourseDTO();
         [TempData] public string Alert { get; set; }
+        public SelectList SelectListInstructors { get; set; }
+
         #endregion
 
         #region Constructor
@@ -31,7 +35,10 @@ namespace VOD.Admin.Pages.Courses
         {
             try
             {
-                ViewData["Instructors"] = (await _db.GetAsync<Instructor, InstructorDTO>()).ToSelectList("Id", "Name");
+                //ViewData["Instructors"] = (await _db.GetAsync<Instructor, InstructorDTO>()).ToSelectList("Id", "Name");
+          
+                var instructors = (await _db.GetAsync<Instructor, InstructorDTO>());
+                SelectListInstructors = new SelectList(instructors, "Id", "Name");
                 return Page();
             }
             catch

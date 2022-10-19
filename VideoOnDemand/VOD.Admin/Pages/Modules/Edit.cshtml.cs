@@ -1,6 +1,8 @@
 
 using System.Threading.Tasks;
-using System.Web.Mvc;
+//using System.Web.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using VOD.Common.DTOModels.Admin;
@@ -17,6 +19,8 @@ namespace VOD.Admin.Pages.Modules
         private readonly IAdminService _db;
         [BindProperty] public ModuleDTO Input { get; set; } = new ModuleDTO();
         [TempData] public string Alert { get; set; }
+
+        public SelectList SelectListCourses { get; set; }
         #endregion
 
         #region Constructor
@@ -32,7 +36,9 @@ namespace VOD.Admin.Pages.Modules
             try
             {
                 Alert = string.Empty;
-                ViewData["Courses"] = (await _db.GetAsync<Course, CourseDTO>()).ToSelectList("Id", "Title");
+                //ViewData["Courses"] = (await _db.GetAsync<Course, CourseDTO>()).ToSelectList("Id", "Title");
+                var courses = (await _db.GetAsync<Course, CourseDTO>());
+                SelectListCourses = new SelectList(courses, "Id", "Title");
                 Input = await _db.SingleAsync<Module, ModuleDTO>(s => s.Id.Equals(id) && s.CourseId.Equals(courseId));
                 return Page();
             }
@@ -56,7 +62,9 @@ namespace VOD.Admin.Pages.Modules
             }
 
             // Reload the modules when the page is reloaded
-            ViewData["Courses"] = (await _db.GetAsync<Course, CourseDTO>()).ToSelectList("Id", "Title");
+            //ViewData["Courses"] = (await _db.GetAsync<Course, CourseDTO>()).ToSelectList("Id", "Title");
+            var courses = (await _db.GetAsync<Course, CourseDTO>());
+            SelectListCourses = new SelectList(courses, "Id", "Title");
             // Something failed, redisplay the form.
             return Page();
         }

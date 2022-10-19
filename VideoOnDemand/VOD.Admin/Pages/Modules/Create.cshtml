@@ -23,7 +23,7 @@
 
                 <div class="form-group">
                     <label asp-for="Input.Course" class="control-label"></label>
-                    <select asp-for="Input.CourseId" class="form-control" asp-items="ViewBag.Courses"></select>
+                    <select asp-for="Input.CourseId" class="form-control" asp-items="@Model.SelectListCourses"></select>
                 </div>
 
                 <button type="submit" class="btn btn-success">Create</button>

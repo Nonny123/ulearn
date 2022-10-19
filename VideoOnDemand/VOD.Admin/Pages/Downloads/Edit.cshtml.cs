@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Mvc;
+//using System.Web.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using VOD.Common.DTOModels.Admin;
@@ -19,6 +21,8 @@ namespace VOD.Admin.Pages.Downloads
         private readonly IAdminService _db;
         [BindProperty] public DownloadDTO Input { get; set; } = new DownloadDTO();
         [TempData] public string Alert { get; set; }
+
+        public SelectList SelectListModules { get; set; }
         #endregion
 
         #region Constructor
@@ -34,7 +38,9 @@ namespace VOD.Admin.Pages.Downloads
             try
             {
                 Alert = string.Empty;
-                ViewData["Modules"] = (await _db.GetAsync<Module, ModuleDTO>(true)).ToSelectList("Id", "CourseAndModule");
+                //ViewData["Modules"] = (await _db.GetAsync<Module, ModuleDTO>(true)).ToSelectList("Id", "CourseAndModule");
+                var modules = (await _db.GetAsync<Module, ModuleDTO>());
+                SelectListModules = new SelectList(modules, "Id", "CourseAndModule");
                 Input = await _db.SingleAsync<Download, DownloadDTO>(s => s.Id.Equals(id) && s.ModuleId.Equals(moduleId) && s.CourseId.Equals(courseId), true);
                 return Page();
             }
@@ -60,7 +66,9 @@ namespace VOD.Admin.Pages.Downloads
             }
 
             // Reload the modules when the page is reloaded
-            ViewData["Modules"] = (await _db.GetAsync<Module, ModuleDTO>(true)).ToSelectList("Id", "CourseAndModule");
+            //ViewData["Modules"] = (await _db.GetAsync<Module, ModuleDTO>(true)).ToSelectList("Id", "CourseAndModule");
+            var modules = (await _db.GetAsync<Module, ModuleDTO>());
+            SelectListModules = new SelectList(modules, "Id", "CourseAndModule");
             // Something failed, redisplay the form.
             return Page();
         }

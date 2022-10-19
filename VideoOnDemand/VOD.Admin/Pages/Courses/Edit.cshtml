@@ -39,7 +39,7 @@
 
                 <div class="form-group">
                     <label asp-for="Input.Instructor" class="control-label"></label>
-                    <select asp-for="Input.InstructorId" class="form-control" asp-items="ViewBag.Instructors"></select>
+                    <select asp-for="Input.InstructorId" class="form-control" asp-items="@Model.SelectListInstructors"></select>
                 </div>
 
                 <button type="submit" class="btn btn-success">Save</button>

@@ -1,6 +1,8 @@
 
 using System.Threading.Tasks;
-using System.Web.Mvc;
+//using System.Web.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using VOD.Common.DTOModels.Admin;
@@ -17,6 +19,8 @@ namespace VOD.Admin.Pages.Downloads
         private readonly IAdminService _db;
         [BindProperty] public DownloadDTO Input { get; set; } = new DownloadDTO();
         [TempData] public string Alert { get; set; }
+
+        public SelectList SelectListModules { get; set; }
         #endregion
 
         #region Constructor
@@ -31,7 +35,10 @@ namespace VOD.Admin.Pages.Downloads
         {
             try
             {
-                ViewData["Modules"] = (await _db.GetAsync<Module, ModuleDTO>(true)).ToSelectList("Id", "CourseAndModule");
+                //ViewData["Modules"] = (await _db.GetAsync<Module, ModuleDTO>(true)).ToSelectList("Id", "CourseAndModule");
+
+                var modules = (await _db.GetAsync<Module, ModuleDTO>());
+                SelectListModules = new SelectList(modules, "Id", "CourseAndModule");
                 return Page();
             }
             catch
@@ -55,7 +62,9 @@ namespace VOD.Admin.Pages.Downloads
                 }
             }
 
-            ViewData["Modules"] = (await _db.GetAsync<Module, ModuleDTO>(true)).ToSelectList("Id", "CourseAndModule");
+            //ViewData["Modules"] = (await _db.GetAsync<Module, ModuleDTO>(true)).ToSelectList("Id", "CourseAndModule");
+            var modules = (await _db.GetAsync<Module, ModuleDTO>());
+            SelectListModules = new SelectList(modules, "Id", "CourseAndModule");
             return Page();
         }
         #endregion

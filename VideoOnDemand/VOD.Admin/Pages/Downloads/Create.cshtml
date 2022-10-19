@@ -28,7 +28,7 @@
 
                 <div class="form-group">
                     <label asp-for="Input.Module" class="control-label"></label>
-                    <select asp-for="Input.ModuleId" class="form-control" asp-items="ViewBag.Modules"></select>
+                    <select asp-for="Input.ModuleId" class="form-control" asp-items="@Model.SelectListModules"></select>
                 </div>
 
                 <button type="submit" class="btn btn-success">Create</button>
