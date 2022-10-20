@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cx3nwE4zJaEVQ9cbtqf89x/vL885B1tC00EpWgc2VZLHzD9F4pj/luP2JLyofd6IU/5ZGqi9hiauhiU5gntsJw==",
+  "dgSpecHash": "JLpJLGBKwCyi39Ne8v+HHp7sTUun3rWWjYIpoVDKE4eVFQInmPXAuFTxIdIOHfZ1PpPpsf2DlwQKW3oYo0zMyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TMP11255\\Source\\Repos\\ulearn\\VideoOnDemand\\VOD.UI\\VOD.UI.csproj",
+  "projectFilePath": "C:\\Users\\TMP11255\\source\\repos\\ulearn\\VideoOnDemand\\VOD.UI\\VOD.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TMP11255\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\TMP11255\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

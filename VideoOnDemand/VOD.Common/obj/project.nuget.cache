@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aL1Mdqzp89Y+1er7BZVpdF6xb/AzfPSxEjTejCToIdHuR95XsG81/oTXHG6Kym2s36YHDBtqKM/+g2zhcOi32w==",
+  "dgSpecHash": "+cUYLOAGpg3lKVOvfmIC/snogGp9+J+550nQKqA3xTqi6bt2PfVWwflZsRxjgoZPKEnudJMUT/Vl1q8zSbM06A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TMP11255\\Source\\Repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj",
+  "projectFilePath": "C:\\Users\\TMP11255\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TMP11255\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\TMP11255\\.nuget\\packages\\microsoft.aspnet.mvc\\5.0.1\\microsoft.aspnet.mvc.5.0.1.nupkg.sha512",

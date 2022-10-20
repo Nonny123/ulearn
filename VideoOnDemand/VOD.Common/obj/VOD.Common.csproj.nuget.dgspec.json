@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TMP11255\\Source\\Repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj": {}
+    "C:\\Users\\TMP11255\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TMP11255\\Source\\Repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj": {
+    "C:\\Users\\TMP11255\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TMP11255\\Source\\Repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj",
+        "projectUniqueName": "C:\\Users\\TMP11255\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj",
         "projectName": "VOD.Common",
-        "projectPath": "C:\\Users\\TMP11255\\Source\\Repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj",
+        "projectPath": "C:\\Users\\TMP11255\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Common\\VOD.Common.csproj",
         "packagesPath": "C:\\Users\\TMP11255\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TMP11255\\Source\\Repos\\ulearn\\VideoOnDemand\\VOD.Common\\obj\\",
+        "outputPath": "C:\\Users\\TMP11255\\source\\repos\\ulearn\\VideoOnDemand\\VOD.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
