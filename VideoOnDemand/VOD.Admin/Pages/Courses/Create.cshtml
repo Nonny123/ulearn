@@ -12,7 +12,7 @@
             <h1>@ViewData["Title"]</h1>
             <partial name="_BackToIndexButtonsPartial" />
             <p></p>
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
                 <div asp-validation-summary="All" class="text-danger"></div>
 
                 <div class="form-group">
@@ -26,15 +26,29 @@
                     <span asp-validation-for="Input.Description" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Input.ImageUrl"></label>
-                    <input asp-for="Input.ImageUrl" class="form-control" />
-                    <span asp-validation-for="Input.ImageUrl" class="text-danger"></span>
+                    <label asp-for="Input.Image.File"></label>
+                    <input asp-for="Input.Image.File" class="form-control" type="file" />
+                    <span asp-validation-for="Input.Image.File" class="text-danger"></span>
                 </div>
+              
                 <div class="form-group">
-                    <label asp-for="Input.MarqueeImageUrl"></label>
-                    <input asp-for="Input.MarqueeImageUrl" class="form-control" />
-                    <span asp-validation-for="Input.MarqueeImageUrl" class="text-danger"></span>
+                    <label asp-for="Input.Image.Path"></label>
+                    <input asp-for="Input.Image.Path" class="form-control"  />
+                    <span asp-validation-for="Input.Image.Path" class="text-danger"></span>
                 </div>
+
+                <div class="form-group">
+                    <label asp-for="Input.MarqueeImage.File"></label>
+                    <input asp-for="Input.MarqueeImage.File" class="form-control" type="file" />
+                    <span asp-validation-for="Input.MarqueeImage.File" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Input.MarqueeImage.Path"></label>
+                    <input asp-for="Input.MarqueeImage.Path" class="form-control" />
+                    <span asp-validation-for="Input.MarqueeImage.Path" class="text-danger"></span>
+                </div>
+                
                 <div class="form-group">
                     <label asp-for="Input.Instructor" class="control-label"></label>
                     <select asp-for="Input.InstructorId" class="form-control" asp-items="@Model.SelectListInstructors"></select>

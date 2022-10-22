@@ -15,6 +15,11 @@ namespace VOD.Common.Entities
         public string ImageUrl { get; set; }
         [MaxLength(255)]
         public string MarqueeImageUrl { get; set; }
+
+        //public Image Image { get; set; }
+
+        //public Image MarqueeImage { get; set; }
+
         [MaxLength(80), Required]
         public string Title { get; set; }
         [MaxLength(1024)]

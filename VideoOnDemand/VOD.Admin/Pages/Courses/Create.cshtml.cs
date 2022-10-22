@@ -10,12 +10,14 @@ using VOD.Common.Entities;
 using VOD.Common.Extensions;
 using VOD.Common.Services;
 
+
 namespace VOD.Admin.Pages.Courses
 {
     [Authorize(Roles = "Admin")]
     public class CreateModel : PageModel
     {
         #region Properties
+
         private readonly IAdminService _db;
         [BindProperty] public CourseDTO Input { get; set; } = new CourseDTO();
         [TempData] public string Alert { get; set; }
